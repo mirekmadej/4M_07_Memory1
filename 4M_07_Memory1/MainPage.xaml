@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M_07_Memory1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            Margin="30"
+            >
+            <Button
+                Text="zacznij od nowa"
+                Clicked="btnZacznijClicked"
+                />
+
+            <Grid ColumnSpacing="20" >
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <ImageButton
+                    Source="tlo.png"
+                    x:Name="p00"
+                    Clicked="btnP00Clicked"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    />
+                <ImageButton
+                    Source="tlo.png"
+                    x:Name="p01"
+                    Clicked="btnP01Clicked"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    />
+                <ImageButton
+                    Source="tlo.png"
+                    x:Name="p02"
+                    Clicked="btnP02Clicked"
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    />
+            </Grid>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
